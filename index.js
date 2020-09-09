@@ -1,13 +1,11 @@
 $(function(){
-    $('#go').on("click", function(event) {
+    $("#go").on("click", function(event) {
         event.preventDefault();
     
-        $('apples').text('#lname'.val() + ' ' + '#fname'.val());
-        $("apples").removeClass("d-none");
+        $("#apples").text($("#lname").val() + " " + $("#fname").val());
+        $("#apples").removeClass("d-none");
         return false;
-      });
-
-      return false;
+    })
 
     });
 // if both first and last name are filled then submit 
